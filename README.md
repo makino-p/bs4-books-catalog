@@ -69,6 +69,11 @@ pip install bs4 requests
 - `print_summary()`
 - `main()`
 
+## Output Files
+
+| File | Description |
+|---|---|
+| `.git` | Generated output |
 
 ---
 
@@ -76,7 +81,7 @@ pip install bs4 requests
 
 - **Lines of code**: 218
 - **Functions**: 7
-- **Output files**: 0
+- **Output files**: 1
 
 ---
 
