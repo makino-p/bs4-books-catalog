@@ -27,6 +27,7 @@ def scrape_catalog_page(page_url: str) -> List[Dict[str, Any]]:
     try:
         response = requests.get(page_url)
         response.raise_for_status()
+        response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
         books = []
         
@@ -63,6 +64,7 @@ def scrape_book_detail(detail_url: str) -> Dict[str, Any]:
     try:
         response = requests.get(detail_url)
         response.raise_for_status()
+        response.encoding = 'utf-8'
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Extract detailed information
